@@ -51,7 +51,7 @@ class StanfordSentiment:
             return self._sentences
 
         sentences = []
-        with open(self.path + "/datasetSentences.txt", "r") as f:
+        with open(self.path + "/datasetSentences.txt", "r", encoding="utf-8") as f:
             first = True
             for line in f:
                 if first:
